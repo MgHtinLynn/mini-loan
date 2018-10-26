@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "bbdf4f66-566b-4db2-be8f-cd87a5842813",
+		"name": "miniLoanAPICollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"HL\",\n  \"email\": \"htinlin01@gmail.com\",\n  \"password\":\"password\",\n  \"nrc_address\":\"3/KaKaaYa(N)151450\",\n  \"role_id\":\"bdf0c2d0-d8ed-11e8-9923-f3aee0bdea37\"\n}"
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/user",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"413d3bc0-d8ee-11e8-bb0f-b1833afa50c6\",\n\t\"token\":\"Vbvc7bzo\"\n}"
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/verify",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"htinlin01@gmail.com\",\n  \"password\":\"password\"\n}"
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/login",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Auth User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE1NDA0OTM1NzcsImV4cCI6MTU0MDQ5NzE3NywibmJmIjoxNTQwNDkzNTc3LCJqdGkiOiJOSFhrWU05WnBGbFpBNEtlIiwic3ViIjoiY2Y4OGRlNTAtZDg4NC0xMWU4LTk0ZTAtZjFkMjA3ZTQ0Mjg5IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gTH74L4wS6xkuoHmHK2wsDgmgKC5Sxg0w3vLAfCFIyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE1NDA0OTA1NTcsImV4cCI6MTU0MDQ5NDE1NywibmJmIjoxNTQwNDkwNTU3LCJqdGkiOiJmUzYzNlNQcGQxSUduenp4Iiwic3ViIjoiNmUzNDkyYTAtZDg2OC0xMWU4LWE0YjYtNmZhODk4MzdmMzA5IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.qnIu8Qj8JXH0PfmzlF8MaEnhwRQJka7Ka8o338pnTIE",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/auth/user",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE1NDA0OTA1NTcsImV4cCI6MTU0MDQ5NDE1NywibmJmIjoxNTQwNDkwNTU3LCJqdGkiOiJmUzYzNlNQcGQxSUduenp4Iiwic3ViIjoiNmUzNDkyYTAtZDg2OC0xMWU4LWE0YjYtNmZhODk4MzdmMzA5IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.qnIu8Qj8JXH0PfmzlF8MaEnhwRQJka7Ka8o338pnTIE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/auth/logout",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LoanType",
+			"item": [
+				{
+					"name": "Get Loan Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/loanTypes",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"loanTypes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API Date Transform Helper",
+			"item": [
+				{
+					"name": "Epoch To Date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base}}/epochToDate/1539043200000",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"epochToDate",
+								"1539043200000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Date To Epoch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base}}/dateToEpoch/2018-06-9",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"dateToEpoch",
+								"2018-06-9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Backend",
+			"item": [
+				{
+					"name": "Loan",
+					"item": [
+						{
+							"name": "Loan Verify from Admin Panel",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{base}}/backend/loanVerify/35c1ae80-d8d1-11e8-9002-c18d75e9792a",
+									"host": [
+										"{{base}}"
+									],
+									"path": [
+										"backend",
+										"loanVerify",
+										"35c1ae80-d8d1-11e8-9002-c18d75e9792a"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Repayment",
+			"item": [
+				{
+					"name": "Make Repayment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE1NDA1Mzc4ODAsImV4cCI6MTU0NTcyMTg4MCwibmJmIjoxNTQwNTM3ODgwLCJqdGkiOiJsNldBVW9EekxqNEFhQmx3Iiwic3ViIjoiNDEzZDNiYzAtZDhlZS0xMWU4LWJiMGYtYjE4MzNhZmE1MGM2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.o9mDxpTbuP35CGoRKVkMXyDmoyfzQmhYUCrYqctqiPs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"amount\": \"300\"\n}"
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/repayment/78ac31f0-d8ee-11e8-a748-8bbf74cfdb9c",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"repayment",
+								"78ac31f0-d8ee-11e8-a748-8bbf74cfdb9c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test API Work",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base}}/api/v1/test-api",
+					"host": [
+						"{{base}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"test-api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

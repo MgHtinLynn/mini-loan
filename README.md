@@ -11,6 +11,11 @@ Clone the repository
 Switch to the repo folder
 
     cd mini-loan
+    
+Create env file
+
+    cp .env.example .env
+    
 Generate a new application key
 
     php artisan key:generate

@@ -16,6 +16,7 @@ Generate a new application key
     php artisan key:generate
 
 Generate a new JWT secret key (If you want to use API)
+
     php artisan jwt:secret
     
 Run the database migrations and Seeding (**Set the database connection in .env before migrating**)
@@ -33,12 +34,12 @@ If you come across any issues please report them [here](https://github.com/MgHti
 
 
 # API Collection
-[File](https://github.com/MgHtinLynn/mini-loan/miniLoanAPICollection.json)
+[File](https://github.com/MgHtinLynn/mini-loan/master/miniLoanAPICollection.json)
 
 # Contributing
 Feel free to create any pull requests for the project. For proposing any new changes or features you want to add to the project, you can send us an email at htinlin01@gmail.com.
 
 ## License
 
-[MIT LICENSE](https://github.com/MgHtinLynn/mini-loan/LICENSE.txt)
+[MIT LICENSE](https://github.com/MgHtinLynn/mini-loan/master/LICENSE.txt)
 

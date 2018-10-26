@@ -39,12 +39,12 @@ If you come across any issues please report them [here](https://github.com/MgHti
 
 
 # API Collection
-[File](https://github.com/MgHtinLynn/mini-loan/master/miniLoanAPICollection.json)
+[File](https://github.com/MgHtinLynn/mini-loan/blob/master/miniLoanAPICollection.json)
 
 # Contributing
 Feel free to create any pull requests for the project. For proposing any new changes or features you want to add to the project, you can send us an email at htinlin01@gmail.com.
 
 ## License
 
-[MIT LICENSE](https://github.com/MgHtinLynn/mini-loan/master/LICENSE.txt)
+[MIT LICENSE](https://github.com/MgHtinLynn/mini-loan/blob/master/LICENSE.txt)
 

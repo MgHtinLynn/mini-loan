@@ -1,7 +1,24 @@
-# mini-loan
+# Mini-loan
 API For Mini-Loan
 
-run command
+## Introduction
+* This is the Backend API For mini-loan
+* The project is taken to Laravel 5.7 so we can develop from the latest Laravel.
+
+## Features
+* Register, Verify Token (OTP), Login (JWT Auth)
+* Get Loan Type List
+* Get Role Type List
+* Create Loan For A User
+* Backend API For Loan Verification
+* Loan Repayment with Repayment Frequency (6 time On a loan duration 6 months (monthly))
+* Loan Paternity Leave Amount
+* Transaction For Each Repayment
+* Use Epoch To Date Params (API)
+* Use UUID instead of increment ID (except transaction table) 
+* Arrangement Fees On Loan
+* Each Repayment with Repayment Frequency (2 time in a month)
+ 
 
 ## Installation
 

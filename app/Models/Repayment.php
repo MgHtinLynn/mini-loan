@@ -28,4 +28,16 @@ class Repayment extends Model
     {
         return $this->hasMany(Transaction::class);
     }
+
+    /**
+     * @param $value
+     * duration_end_date
+     * @return string
+     *
+     *
+     */
+    public function getDurationEndDateAttribute($value)
+    {
+        return $this->dateToEpoch($value);
+    }
 }

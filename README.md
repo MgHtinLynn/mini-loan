@@ -9,7 +9,7 @@ API For Mini-Loan
 * Register, Verify Token (OTP), Login (JWT Auth)
 * Get Loan Type List
 * Get Role Type List
-* Create Loan For A User
+* Create Loan For A User with Interest Rate
 * Backend API For Loan Verification
 * Loan Repayment with Repayment Frequency (6 time On a loan duration 6 months (monthly))
 * Loan Paternity Leave Amount
@@ -17,7 +17,7 @@ API For Mini-Loan
 * Use Epoch To Date Params (API)
 * Use UUID instead of increment ID (except transaction table) 
 * Arrangement Fees On Loan
-* Each Repayment with Repayment Frequency (2 time in a month)
+* Each Repayment with Repayment Frequency (2 time in a month on a repayment)
  
 
 ## Installation
@@ -44,6 +44,11 @@ Generate a new JWT secret key (If you want to use API)
 Run the database migrations and Seeding (**Set the database connection in .env before migrating**)
 
     php artisan migrate --seed
+
+Run the config cache
+
+    php artisan config:cache
+    
 Start the local development server
 
     php artisan serve
@@ -55,7 +60,7 @@ You can now access the server at http://localhost:8000
 If you come across any issues please report them [here](https://github.com/MgHtinLynn/mini-loan/issues).
 
 
-# API Collection
+# API Collection (POSTMAN)
 [File](https://github.com/MgHtinLynn/mini-loan/blob/master/miniLoanAPICollection.json)
 
 # Contributing

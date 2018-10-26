@@ -353,6 +353,56 @@
 			]
 		},
 		{
+			"name": "Loan",
+			"item": [
+				{
+					"name": "Create Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC92MVwvbG9naW4iLCJpYXQiOjE1NDA1Mzc4ODAsImV4cCI6MTU0NTcyMTg4MCwibmJmIjoxNTQwNTM3ODgwLCJqdGkiOiJsNldBVW9EekxqNEFhQmx3Iiwic3ViIjoiNDEzZDNiYzAtZDhlZS0xMWU4LWJiMGYtYjE4MzNhZmE1MGM2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.o9mDxpTbuP35CGoRKVkMXyDmoyfzQmhYUCrYqctqiPs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMlHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"loan_amount\":\"1000\",\n\t\"duration\":1528502400000,\n\t\"repayment_frequency\": 3,\n\t\"interest_rate\": \"6\",\n\t\"arrangement_fees\": \"10\",\n\t\"loan_type_id\":\"bdf3e820-d8ed-11e8-8236-a1085bd38f0e\"\n}"
+						},
+						"url": {
+							"raw": "{{base}}/api/v1/loan",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"loan"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Test API Work",
 			"request": {
 				"method": "GET",
